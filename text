@@ -1,0 +1,44 @@
+Q.Explain Hadoop Deployment Layout in Brief.
+Introduction:
+Standard deployment layout for Hadoop:
+•	Hadoop has deployment layout due to the increased complexity and developing Hadoop ecosystem.
+•	Which pave the way for the betterment in the integration part of the Hadoop sub-projects.
+•	Which helps to make the installation process much easier.
+•	With the help of installation one can make the entry process easier and will tend to increase the adoption of the Hadoop.
+Packages:
+•	Each Hadoop is divided into number of packages in order to make them to operate independently to upgrade themselves.
+The packages were divided into list and they include:
+•	Hadoop Common:
+•	They will include the native code which needs the jar files.
+•	HDFS Client: a.) HDFS jars
+b.)scripts.
+c.)shared Libraries.
+HDFS server: jsvc executable Yarn Client - Yarn client jars and scripts
+Yarn Server - Yarn server jars and scripts 
+MapReduce - MapReduce jars, scripts, and shared libraries LZO - LZ0 codec Metrics - Plugins for Chukwa and Ganglia.
+
+
+Other team packages are:
+	Pig
+	Hive 
+	Oozie 
+	client Oozie server 
+	Howl 
+	client Howl server
+•	PRM or RedHat is used to deploy these packages.
+•	And again a package is needed which will depend upon the package versions.
+•	In the new deployed layout one is capable of generating tarballs.
+Deployment:
+•	Instead of package manager it is necessary to have a standard deployment which results in package installation.
+•	It is among the top level directories.
+•	As well it contains the sample of each.
+Path Configurations
+•	Path configuration can be done at compile phase or installation phase.
+•	RPM has the advantage over relocating the directory and helps for configuring the path at the installation phase.
+•	In case, of Debian package the path can be configured even on the compile phase.
+Build phase parameter:
+•	package.prefix – package prefix location prefix (Default /usr).
+•	package.conf.dir - configuration directory location (Default /etc/hadoop).
+•	package.log.dir -  Log directory Location (Default /var/log/hadoop).
+•	package.pid.dir - pid directory Location (Default /var/run/hadoop)
+
